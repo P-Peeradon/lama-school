@@ -1,6 +1,6 @@
-import React from 'react'
 import UserCard from '@/app/components/UserCard';
 import CountChart from '@/app/components/CountChart';
+import AttendanceChart from '@/app/components/AttendanceChart';
 
 const AdminPage = () => {
     return (
@@ -15,12 +15,15 @@ const AdminPage = () => {
                     <UserCard type="staff" />
                 </div>
                 {/* MIDDLE CHART */}
-                <div className="flex gap-4 fex-col lg:flex-row">
+                <div className="flex gap-4 flex-col lg:flex-row">
                     {/* COUNT CHART */}
-                    <div className="w-fll lg:w-1/3 h-112.5">
+                    <div className="w-full lg:w-1/3 h-112.5">
                         <CountChart />
                     </div>
                     {/* ATTENDANCE CHART */}
+                    <div className="w-full lg:w-2/3 h-112.5">
+                        <AttendanceChart />
+                    </div>
                 </div>
                 {/* BOTTOM CHART */}
             </div>
