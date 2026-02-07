@@ -1,5 +1,5 @@
 "use client"
-import { RadialBarChart, RadialBar, Legend, ResponsiveContainer } from "recharts"
+import { RadialBarChart, RadialBar, ResponsiveContainer } from "recharts"
 import Image from "next/image"
 
 const data = [
@@ -16,9 +16,9 @@ const data = [
     {
         name: "Boys",
         count: 53,
-        fill: "#83a6ed"
+        fill: "#C3EBFA"
     }
-]
+];
 
 const CountChart = () => {
     return (
