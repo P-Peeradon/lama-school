@@ -1,5 +1,5 @@
 "use client"
-import { Bar, BarChart, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { Bar, BarChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import Image from 'next/image'
 
 const data = [
