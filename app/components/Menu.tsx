@@ -16,19 +16,19 @@ const menuItems = [
             {
                 icon: "/teacher.png",
                 label: "Teachers",
-                href: "/teachers",
+                href: "/teacher",
                 visible: ["admin", "teacher"],
             },
             {
                 icon: "/student.png",
                 label: "Students",
-                href: "/students",
+                href: "/student",
                 visible: ["admin", "teacher"],
             },
             {
                 icon: "/parent.png",
                 label: "Parents",
-                href: "/parents",
+                href: "/parent",
                 visible: ["admin", "teacher"],
             },
             {
