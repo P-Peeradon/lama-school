@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export const role = 'admin';
+import { role } from "../lib/data";
 
 const menuItems = [
     {
@@ -123,7 +123,7 @@ const Menu = () => {
         <div className="mt-4 text-sm">
             {menuItems.map(i => (
                 <div key={i.title} className="flex flex-col gap-2">
-                    <span className="hidden lg:block text-gray-400 font-light my-4">{i.title}</span>
+                    <span className="hidden lg:block text-gray-400 font-light my-2">{i.title}</span>
                     {i.items.map((item) => {
                         if (item.visible.includes(role)) return (
                             <Link 
