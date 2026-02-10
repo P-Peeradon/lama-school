@@ -58,38 +58,38 @@ const TeacherListPage = () => {
 
     const renderRow = (item: Teacher) => { 
         return (
-        <tr key={item.id}>
-            <td>
-                <Image 
-                    src={item.photo} 
-                    alt="" 
-                    width={40} 
-                    height={40} 
-                    className='md:hidden xl:block w-10 h-10 rounded-full object-cover' 
-                />
-                <div className="flex flex-col">
-                    <h3 className="font-semibold">{item.name}</h3>
-                    <p className="text-xs text-gray-500">{item?.email}</p>
-                </div>
-            </td>
-            <td className='hidden md:table-cell'>{item.teacherId}</td>
-            <td className='hidden md:table-cell'>{item.subjects.join(', ')}</td>
-            <td className='hidden md:table-cell'>{item.classes.join(', ')}</td>
-            <td className='hidden lg:table-cell'>{item.phone}</td>
-            <td className='hidden lg:table-cell'>{item.address}</td>
-            <td>
-                <div className="flex items-center gap-2">
-                    <Link href={`list/teacher/${item.id}`}>
-                        <button className='w-7 h-7 flex items-center justify-center rounded-full bg-[#C3EBFA]'>
-                                <Image 
-                                    src="/view.png" 
-                                    alt="" 
-                                    width={16} 
-                                    height={16} 
-                                />
-                        </button>
-                    </Link>
-                    {role === "admin" && (
+            <tr key={item.id}>
+                <td className='flex items-center gap-4 p-4'>
+                    <Image 
+                        src={item.photo} 
+                        alt="" 
+                        width={40} 
+                        height={40} 
+                        className='md:hidden xl:block w-10 h-10 rounded-full object-cover' 
+                    />
+                    <div className="flex flex-col">
+                        <h3 className="font-semibold">{item.name}</h3>
+                        <p className="text-xs text-gray-500">{item?.email}</p>
+                    </div>
+                </td>
+                <td className='hidden md:table-cell'>{item.teacherId}</td>
+                <td className='hidden md:table-cell'>{item.subjects.join(', ')}</td>
+                <td className='hidden md:table-cell'>{item.classes.join(', ')}</td>
+                <td className='hidden lg:table-cell'>{item.phone}</td>
+                <td className='hidden lg:table-cell'>{item.address}</td>
+                <td>
+                    <div className="flex items-center gap-2">
+                        <Link href={`list/teacher/${item.id}`}>
+                            <button className='w-7 h-7 flex items-center justify-center rounded-full bg-[#C3EBFA]'>
+                                    <Image 
+                                        src="/view.png" 
+                                        alt="" 
+                                        width={16} 
+                                        height={16} 
+                                    />
+                            </button>
+                        </Link>
+                        {role === "admin" && (
                             <button className='w-7 h-7 flex items-center justify-center rounded-full bg-[#CFCEFF]'>
                                 <Image 
                                     src="/delete.png" 
@@ -98,11 +98,12 @@ const TeacherListPage = () => {
                                     height={16} 
                                 />
                             </button>
-                    )}
-                </div>
-            </td>
-        </tr>
-    )};
+                        )}
+                    </div>
+                </td>
+            </tr>
+        )
+    };
 
     return (
         <div className='bg-white p-4 rounded-md flex-1 m-4 mt-0'>
