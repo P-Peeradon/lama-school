@@ -10,37 +10,37 @@ export const calendarEvents = [
     {
         title: 'Math',
         allDay: false,
-        start: new Date(2026, 2, 12, 8, 0),
-        end: new Date(2026, 2, 12, 8, 45)
+        start: new Date(2026, 2, 10, 8, 0, 0),
+        end: new Date(2026, 2, 10, 8, 45, 0)
     },
     {
         title: 'English',
         allDay: false,
-        start: new Date(2026, 2, 12, 9, 0),
-        end: new Date(2026, 2, 12, 9, 45)
+        start: new Date(2026, 2, 10, 9, 0, 0),
+        end: new Date(2026, 2, 10, 9, 45, 0)
     },
     {
         title: 'Biology',
         allDay: false,
-        start: new Date(2026, 2, 12, 10, 0),
-        end: new Date(2026, 2, 12, 10, 45)
+        start: new Date(2026, 2, 10, 10, 0, 0),
+        end: new Date(2026, 2, 10, 10, 45, 0)
     },
     {
         title: 'Physics',
         allDay: false,
-        start: new Date(2026, 2, 12, 11, 0),
-        end: new Date(2026, 2, 12, 11, 45)
+        start: new Date(2026, 2, 10, 11, 0, 0),
+        end: new Date(2026, 2, 10, 11, 45)
     },
     {
         title: 'Chemistry',
         allDay: false,
-        start: new Date(2026, 2, 12, 13, 0),
-        end: new Date(2026, 2, 12, 13, 45)
+        start: new Date(2026, 2, 10, 13, 0, 0),
+        end: new Date(2026, 2, 10, 13, 45, 0)
     },
     {
         title: 'History',
         allDay: false,
-        start: new Date(2026, 2, 12, 14, 0),
-        end: new Date(2026, 2, 12, 14, 45)
+        start: new Date(2026, 2, 10, 14, 0, 0),
+        end: new Date(2026, 2, 10, 14, 45, 0)
     },
 ];
