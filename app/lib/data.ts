@@ -37,4 +37,10 @@ export const calendarEvents = [
         start: new Date(2026, 2, 12, 13, 0),
         end: new Date(2026, 2, 12, 13, 45)
     },
+    {
+        title: 'History',
+        allDay: false,
+        start: new Date(2026, 2, 12, 14, 0),
+        end: new Date(2026, 2, 12, 14, 45)
+    },
 ];
