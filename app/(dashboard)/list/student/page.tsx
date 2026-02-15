@@ -1,8 +1,7 @@
 import Pagination from '@/app/components/Pagination';
 import Table from '@/app/components/Table';
 import TableSearch from '@/app/components/TableSearch';
-import { role } from '@/app/lib/data';
-import { studentsData } from '@/app/lib/data';
+import { role, studentsData } from '@/app/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 
