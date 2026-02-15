@@ -16,7 +16,7 @@
 }
 
 .rbc-btn-group:first-child {
-  display: none !important;
+  font-size: 13px !important;
 }
 
 .rbc-toolbar-label {
