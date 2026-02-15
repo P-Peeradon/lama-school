@@ -28,7 +28,7 @@ const columns = [
 ];
 
 const SubjectListPage = () => {
-  const renderRow = (item: Subject) => { 
+    const renderRow = (item: Subject) => { 
         return (
             <tr key={item.id}>
                 <td className='flex items-center gap-4 p-4'>{item.name}</td>
