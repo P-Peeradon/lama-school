@@ -35,8 +35,8 @@ const columns = [
         className: 'hidden md:table-cell'
     },
     {
-        header: 'Classes',
-        accessor: 'classes',
+        header: 'Class',
+        accessor: 'class',
         className: 'hidden md:table-cell'
     },
     {
