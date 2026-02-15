@@ -24,7 +24,7 @@ const Table = ({
                 {data.map((item) => renderRow(item))}
             </tbody>
         </table>
-    )
-}
+    );
+};
 
 export default Table;

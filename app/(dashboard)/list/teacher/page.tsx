@@ -80,7 +80,7 @@ const TeacherListPage = () => {
                 <td>
                     <div className="flex items-center gap-2">
                         <Link href={`list/teacher/${item.id}`}>
-                            <button className='w-7 h-7 flex items-center justify-center rounded-full bg-[#C3EBFA]'>
+                            <button type='button' className='w-7 h-7 flex items-center justify-center rounded-full bg-[#C3EBFA]'>
                                     <Image 
                                         src="/view.png" 
                                         alt="" 
@@ -90,7 +90,7 @@ const TeacherListPage = () => {
                             </button>
                         </Link>
                         {role === "admin" && (
-                            <button className='w-7 h-7 flex items-center justify-center rounded-full bg-[#CFCEFF]'>
+                            <button type='button' className='w-7 h-7 flex items-center justify-center rounded-full bg-[#CFCEFF]'>
                                 <Image 
                                     src="/delete.png" 
                                     alt="" 
@@ -113,13 +113,13 @@ const TeacherListPage = () => {
                 <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
                     <TableSearch />
                     <div className="flex items-center justify-center gap-4 self-end">
-                        <button className='w-8 h-8 flex items-center justify-center rounded-full bg-[#FAE27C]'>
+                        <button type='button' className='w-8 h-8 flex items-center justify-center rounded-full bg-[#FAE27C]'>
                             <Image src="/filter.png" alt='' width={14} height={14} />
                         </button>
-                        <button className='w-8 h-8 flex items-center justify-center rounded-full bg-[#FAE27C]'>
+                        <button type='button' className='w-8 h-8 flex items-center justify-center rounded-full bg-[#FAE27C]'>
                             <Image src="/sort.png" alt='' width={14} height={14} />
                         </button>
-                        <button className='w-8 h-8 flex items-center justify-center rounded-full bg-[#FAE27C]'>
+                        <button type='button' className='w-8 h-8 flex items-center justify-center rounded-full bg-[#FAE27C]'>
                             <Image src="/plus.png" alt='' width={14} height={14} />
                         </button>
                     </div>
@@ -138,3 +138,4 @@ const TeacherListPage = () => {
 };
 
 export default TeacherListPage;
+
